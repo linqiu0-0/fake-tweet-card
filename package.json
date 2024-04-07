@@ -2,9 +2,10 @@
   "name": "react-fake-tweet",
   "version": "1.0.7",
   "description": "React renderer for tweets.",
-  "author": "transitive-bullshit",
+  "homepage": "https://linqiu0-0.github.io/fake-tweet-card/",
+  "author": "Lin Qiu",
   "license": "MIT",
-  "repository": "transitive-bullshit/react-fake-tweet",
+  "repository": "linqiu0-0/fake-tweet-card",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -12,20 +13,16 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
-    "test:build": "run-s build",
-    "test:lint": "eslint .",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
-    "react": "^18.2.0"
+    "react": "^17.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -44,8 +41,8 @@
     "microbundle-crl": "^0.13.8",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scripts": "^3.4.1"
   },
   "files": [
@@ -58,7 +55,21 @@
     "classnames": "^2.2.6",
     "dayjs": "^1.8.24",
     "lodash.isequal": "^4.5.0",
+    "react-image-lightbox": "^5.1.4",
     "react-process-string": "^1.2.0",
+    "react-router-dom": "^6.22.3",
     "twemoji": "^12.1.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

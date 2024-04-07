@@ -16,7 +16,8 @@ This project is a fork of [fake-tweet](https://github.com/lluiscamino/fake-tweet
 - Fixes some style issues
 - Used in production by [twitter-search.io](https://twitter-search.io)
 
-## Run the project
+## Run
+Run the following command to span the server locally
 
 ```bash
 npm install

@@ -54,7 +54,6 @@ const HoverAvatar = ({ src, alt, userName, userHandle, userBio, followers, follo
     const profileRef = useRef(null);
     const [profileWidth, setProfileWidth] = useState(0);
   
-    console.log(isHovered);
 
     useEffect(() => {
         if (profileRef.current) {
