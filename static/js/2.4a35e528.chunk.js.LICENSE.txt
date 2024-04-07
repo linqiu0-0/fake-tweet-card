@@ -28,8 +28,6 @@ object-assign
  * http://api.jqueryui.com/category/ui-core/
  */
 
-/*! Copyright Twitter Inc. and other contributors. Licensed under MIT */
-
 /**
  * @license React
  * react-is.production.min.js
