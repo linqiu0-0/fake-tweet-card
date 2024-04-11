@@ -3,7 +3,6 @@ import Avatar from '@mui/material/Avatar';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Twemoji from './Twemoji';
 import styles from './styles.module.css'
 import { styleNumber, convertToBlue } from './utils/utils'
 
@@ -83,12 +82,8 @@ const HoverAvatar = ({ src, alt, userName, userHandle, userBio, followers, follo
                     <div className={styles['user-info-right']}>
 
                         <div className={styles['user-name']}>
-                            <Twemoji
-                                options={{ className: styles['twemoji-sm'] }}
-                                className={styles['user-name-txt']}
-                            >
-                                <span className={styles.link}>{userName}</span>
-                            </Twemoji>
+                         
+                            <span className={styles.link}>{userName}</span>
 
                             {verified && verifiedIcon}
                         </div>
