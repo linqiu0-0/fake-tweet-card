@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../styles.module.css'
+import processString from 'react-process-string';
+import cs from 'classnames'
 
 export function styleNumber(num) {
     let div = num / 1000000
@@ -17,21 +19,56 @@ export function styleNumber(num) {
     return num
 }
 
+export function convertToBlue(text) {
 
+  // Define the array of processors
+  const config = [
+    {
+      regex: /(?:^|[^a-zA-Z0-9_＠!@#$%&*])(?:(?:@|＠)(?!\/))([a-zA-Z0-9/_]{1,15})(?:\b(?!@|＠)|$)/,
+      fn: (key, result) => (
+        <span key={key}>
+          {' '}
+          <span className={cs(styles.link, styles.mention)}>
+            @{result[1]}
+          </span>
+        </span>
+      )
+    },
+    {
+      regex: /(?:^|[^a-zA-Z0-9_＠!@#$%&*])(?:#(?!\/))([a-zA-Z0-9/_]{1,280})(?:\b(?!#)|$)/,
+      fn: (key, result) => (
+        <span key={key}>
+          {' '}
+          <span className={cs(styles.link, styles.mention)}>
+            #{result[1]}
+          </span>
+        </span>
+      )
+    },
+    {
+      regex: /(\bhttps?:\/\/\S+\b)/g,
+      fn: (key, result) => (
+        <span key={key}>
+          {' '}
+          <span className={cs(styles.link, styles.mention)} target="_blank" rel="noopener noreferrer">
+            {result[0]}
+          </span>
+        </span>
+      )
+    },
+    {
+      regex: /(\bhttp?:\/\/\S+\b)/g,
+      fn: (key, result) => (
+        <span key={key}>
+          {' '}
+          <span className={cs(styles.link, styles.mention)} target="_blank" rel="noopener noreferrer">
+            {result[0]}
+          </span>
+        </span>
+      )
+    }
+  ];
 
-export function convertToBlue(text){
-    // Split the text by space to get individual words
-    const words = text.split(/\s/);
-    
-    // Map through the words and wrap hashtags and mentions in a span with the blue-text class
-    const processedWords = words.map(word => {
-      if (word.startsWith('#') || word.startsWith('@')) {
-        return <span className={styles["blue-text"]}>{word} </span>;
-      }
-      return word + ' ';
-    });
-    
-    // Return the processed text
-    return <>{processedWords}</>;
-  };
-  
+  // Use processString to format the text based on the config
+  return processString(config)(text);
+}

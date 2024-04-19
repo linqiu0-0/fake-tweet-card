@@ -9,7 +9,6 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: unset;
   background: #fff;
-  overflow: hidden;
 }
 
 .user-info-right {
@@ -106,6 +105,7 @@
 
 .link {
   cursor: pointer;
+  word-break: break-all;
 }
 
 .link:hover {

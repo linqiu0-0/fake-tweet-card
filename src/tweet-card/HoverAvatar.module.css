@@ -21,7 +21,7 @@
     padding: 8px;
     border-radius: 6px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+    z-index: 3;
     width: max-content;
     max-width: 280px; /* Adjust as needed */
     display: none;

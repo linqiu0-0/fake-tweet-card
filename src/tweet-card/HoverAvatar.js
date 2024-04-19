@@ -43,6 +43,7 @@ const UserProfile = styled(({ isHovered, ...otherProps }) => <Box {...otherProps
     width: 'max-content', // Width should expand with content
     maxWidth: '300px', // Set a maximum width for the tooltip
     textAlign: 'left', // Align text to the left
+    textOverflow: 'ellipsis',
   }));
 // Usage in the component remains the same
 

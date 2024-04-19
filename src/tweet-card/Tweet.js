@@ -190,7 +190,6 @@ export function Tweet(props) {
   const [text, setText] = useState(config.text)
 
   useEffect(() => {
-    console.log(config.text)
     setText(
       processString([
         {

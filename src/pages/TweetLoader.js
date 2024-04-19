@@ -34,7 +34,7 @@ function TweetLoader() {
     let localWarnings = [];
 
     // Parameters that are expected
-    const expectedParams = ['name', 'handle', 'profileImageUrl', 'follower', 'following', 'verified', 'headline', 'commentCount', 'retweetCount', 'favoriteCount', 'text', 'viewCount', 'bookmark', 'imageUrls', 'date'];
+    const expectedParams = ['name', 'handle', 'profileImageUrl', 'follower', 'following', 'verified', 'headline', 'commentCount', 'retweetCount', 'favoriteCount', 'text', 'viewCount', 'bookmark','date'];
 
     // Check for each expected parameter
     expectedParams.forEach(param => {
@@ -42,6 +42,9 @@ function TweetLoader() {
         localWarnings.push(`Missing parameter: ${param}`);
       }
     });
+
+
+
 
     // Parse each query parameter and update state variables
     setName(searchParams.get('name') || '');
@@ -63,7 +66,6 @@ function TweetLoader() {
 
 
 }, [searchParams]);
-
   return (
     <>
     <Stack sx={{ width: '100%', marginBottom: 2 }}>
