@@ -105,11 +105,38 @@
 .link {
   cursor: pointer;
   word-break: break-all;
+  position: relative;
+  z-index: 0;
 }
 
 .link:hover {
   text-decoration: underline;
+  z-index: 2000;
 }
+
+.link::after {
+  content: "It's not clickable";
+  position: absolute;
+  width: 130px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .avatar-container {
   margin-right: 10px;

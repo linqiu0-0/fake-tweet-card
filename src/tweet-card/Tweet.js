@@ -265,7 +265,7 @@ export function Tweet(props) {
   const dateAppDetails = [
     config.date && renderDate(config.date),
 
-    (<span className={cs(styles.link, styles['rt-likes'])}>
+    config.views > 0 && (<span className={cs(styles.link, styles['rt-likes'])}>
       <strong>{styleNumber(config.views)}</strong> Views
     </span>)
   ].filter(Boolean)
