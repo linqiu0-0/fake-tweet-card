@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3193e085b467c17f3937bb8e84380d95",
+    "revision": "92c5dae568fd0d9bacf3ca0468ee2ea7",
     "url": "/fake-tweet-card/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fake-tweet-card/static/css/2.9522b9fe.chunk.css"
   },
   {
-    "revision": "16d649ca1fdb6925bd6f",
+    "revision": "bce83e9d10e6b2b252fd",
     "url": "/fake-tweet-card/static/css/main.44f87d3e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fake-tweet-card/static/js/2.8cbb48ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "16d649ca1fdb6925bd6f",
-    "url": "/fake-tweet-card/static/js/main.472fa25f.chunk.js"
+    "revision": "bce83e9d10e6b2b252fd",
+    "url": "/fake-tweet-card/static/js/main.1cf9c04a.chunk.js"
   },
   {
     "revision": "ad4b5e1d731906d43672",
