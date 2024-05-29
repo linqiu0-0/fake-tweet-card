@@ -328,15 +328,12 @@ export function Tweet(props) {
 
       <div className={styles['bottom-buttons']}>
 
-        <CommentAction comment_count={config.comments} />
+        {config.comments > 0 && <CommentAction comment_count={config.comments} />}
+        
 
-
-        <RetweetAction retweet_count={config.retweets} />
-
-
-        <FavoriteAction favorite_count={config.likes} />
-        <BookmarkAction bookmark_count={config.bookmarks} />
-
+        {config.retweets > 0 && <RetweetAction retweet_count={config.retweets} />}
+        {config.likes > 0 && <FavoriteAction favorite_count={config.likes} />}
+        {config.bookmarks > 0 && <BookmarkAction bookmark_count={config.bookmarks} />}
         {shareAction}
       </div>
     </div>
