@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/fake-tweet-card/static/css/main.bcaddf29.chunk.css",
-    "main.js": "/fake-tweet-card/static/js/main.30dd9f4b.chunk.js",
-    "main.js.map": "/fake-tweet-card/static/js/main.30dd9f4b.chunk.js.map",
+    "main.css": "/fake-tweet-card/static/css/main.22803d02.chunk.css",
+    "main.js": "/fake-tweet-card/static/js/main.efd47da4.chunk.js",
+    "main.js.map": "/fake-tweet-card/static/js/main.efd47da4.chunk.js.map",
     "runtime-main.js": "/fake-tweet-card/static/js/runtime-main.8e8d81b5.js",
     "runtime-main.js.map": "/fake-tweet-card/static/js/runtime-main.8e8d81b5.js.map",
     "static/js/2.2415a5c8.chunk.js": "/fake-tweet-card/static/js/2.2415a5c8.chunk.js",
     "static/js/2.2415a5c8.chunk.js.map": "/fake-tweet-card/static/js/2.2415a5c8.chunk.js.map",
     "index.html": "/fake-tweet-card/index.html",
-    "precache-manifest.243e6c0b0a8610aee080c28e4513a352.js": "/fake-tweet-card/precache-manifest.243e6c0b0a8610aee080c28e4513a352.js",
+    "precache-manifest.f76a220588ce49147a00749e18d1de36.js": "/fake-tweet-card/precache-manifest.f76a220588ce49147a00749e18d1de36.js",
     "service-worker.js": "/fake-tweet-card/service-worker.js",
-    "static/css/main.bcaddf29.chunk.css.map": "/fake-tweet-card/static/css/main.bcaddf29.chunk.css.map",
+    "static/css/main.22803d02.chunk.css.map": "/fake-tweet-card/static/css/main.22803d02.chunk.css.map",
     "static/js/2.2415a5c8.chunk.js.LICENSE.txt": "/fake-tweet-card/static/js/2.2415a5c8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8e8d81b5.js",
     "static/js/2.2415a5c8.chunk.js",
-    "static/css/main.bcaddf29.chunk.css",
-    "static/js/main.30dd9f4b.chunk.js"
+    "static/css/main.22803d02.chunk.css",
+    "static/js/main.efd47da4.chunk.js"
   ]
 }
